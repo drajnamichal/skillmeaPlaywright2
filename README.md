@@ -26,13 +26,19 @@ NOTE: Remember to add the secrets & variables to your local repo.
 IMPORTANT: Create your [.env](.env) file following the [.env.example](.env.example).
 
 
-On your terminal, type:
+## Installation
 
-1. `npm i`
+If you want to run this on your local machine, git clone the repo to local. In the main directory run the below commands. This will install playwright dependencies on your machine.
 
+```bash
+npm install
+npx playwright install
+```
 
-## Run the project
-Take a look at the [package.json](package.json) - scripts for more details.
-The tests are using https://saucedemo.com/
+## Running the automated checks
 
-Happy Testing 🎭
+```bash
+npx playwright test
+```
+
+Happy Playwright Testing 🎭
