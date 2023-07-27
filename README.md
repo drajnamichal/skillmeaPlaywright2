@@ -3,16 +3,13 @@
 This is a repo for advanced Playwright course on Skillmea.
 
 
-## Dependencies
+## Prerequisites
 
-- Playwright v1.36.1
-- Node v20.3.0
-- npm v9.6.5
-- VSCode Version: 1.80.0 (Universal)
+You will need the following tools:
 
-> Pre requirements: 
-- [Node setup](https://nodejs.dev/en/learn/how-to-install-nodejs/)
-- [VS Code setup](https://code.visualstudio.com/learn/get-started/basics)
+1. A recent version of [Node.js]([https://nodejs.org/](https://nodejs.dev/en/learn/how-to-install-nodejs/)).
+2. A good editor like [Visual Studio Code]([https://code.visualstudio.com/](https://code.visualstudio.com/learn/get-started/basics)) with the [Playwright extension](https://playwright.dev/docs/getting-started-vscode).
+3. A [GitHub](https://github.com/) account with a [Git](https://git-scm.com/) client.
 
 
 ## Fork and clone the project
