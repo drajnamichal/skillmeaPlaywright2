@@ -7,7 +7,7 @@ This is a repo for advanced Playwright course on Skillmea.
 
 You will need the following tools:
 
-1. A recent version of [Node.js]([https://nodejs.org/](https://nodejs.dev/en/learn/how-to-install-nodejs/)).
+1. A recent version of [Node.js]([https://nodejs.org/]).
 2. A good editor like [Visual Studio Code]([https://code.visualstudio.com/](https://code.visualstudio.com/learn/get-started/basics)) with the [Playwright extension](https://playwright.dev/docs/getting-started-vscode).
 3. A [GitHub](https://github.com/) account with a [Git](https://git-scm.com/) client.
 
