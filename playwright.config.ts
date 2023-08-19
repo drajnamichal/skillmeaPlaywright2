@@ -31,7 +31,7 @@ export default defineConfig({
       "./node_modules/playwright-slack-report/dist/src/SlackReporter.js",
       {
         channels: ["playwright_tests"],
-        sendResults: "always",
+        sendResults: "off",
         meta: [
           {
             key: 'Merged to branch',
