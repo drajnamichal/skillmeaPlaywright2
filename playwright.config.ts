@@ -27,6 +27,23 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
+    [
+      "./node_modules/playwright-slack-report/dist/src/SlackReporter.js",
+      {
+        channels: ["playwright_tests"],
+        sendResults: "always",
+        meta: [
+          {
+            key: 'Merged to branch',
+            value: `${process.env.GITHUB_REF_NAME}`
+          },
+          {
+            key: 'Author',
+            value: `${process.env.GITHUB_ACTOR}`,
+          },
+        ],
+      },
+    ],
     ['list'],
     ['html']
   ],
