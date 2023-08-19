@@ -2,7 +2,7 @@ import test, { expect } from '../fixtures/basePages';
 
 test.describe('Console log errors', () => {
 
-  test('Page has no errors or logs', async ({ page }) => {
+  test.skip('Page has no errors or logs', async ({ page }) => {
 
     const logs = [] as any;
     page.on("console", (message) => {

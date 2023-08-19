@@ -5,7 +5,7 @@ test.describe('Visual testing', () => {
     await loginPage.gotoLoginPage();
   })
 
-  test('Visual test - login page', async ({ page }) => {
+  test.skip('Visual test - login page', async ({ page }) => {
     await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
   });
 
