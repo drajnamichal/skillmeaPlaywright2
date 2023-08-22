@@ -10,7 +10,7 @@ test.describe('API Tests', () => {
   const randomNumber = faker.number.int(50);
 
   test("GET request @api", async ({ request }) => {
-    const response = await request.get("https://restful-booker.herokuapp.com/booking/2");
+    const response = await request.get("https://restful-booker.herokuapp.com/booking/4");
     expect(response.status()).toBe(200);
     const body = await response.json();
     console.log(JSON.stringify(body));
@@ -87,7 +87,7 @@ test("PUT - update the booking details @api", async ({ request }) => {
   token = responseBody.token;
   console.log("New token is: " + token);
 
-  const updateRequest = await request.put("/booking/2", {
+  const updateRequest = await request.put("/booking/3", {
     headers: {
       "Content-Type": "application/json",
       "Accept": "application/json",

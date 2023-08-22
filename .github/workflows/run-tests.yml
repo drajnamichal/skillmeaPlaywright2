@@ -10,10 +10,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        shard: [1/4, 2/4, 3/4, 4/4]
+
     steps:
       - name: Check out project
         uses: actions/checkout@v2
@@ -30,7 +27,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: SLACK_BOT_USER_OAUTH_TOKEN=${{ secrets.SLACK_BOT_USER_OAUTH_TOKEN}} npx playwright test --shard ${{ matrix.shard }}
+        run: SLACK_BOT_USER_OAUTH_TOKEN=${{ secrets.SLACK_BOT_USER_OAUTH_TOKEN}} npx playwright test
 
       - uses: actions/upload-artifact@v3
         if: always()
