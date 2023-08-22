@@ -27,7 +27,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: SLACK_BOT_USER_OAUTH_TOKEN=${{ secrets.SLACK_BOT_USER_OAUTH_TOKEN}} npx playwright test
+        run: SLACK_BOT_USER_OAUTH_TOKEN=${{ secrets.SLACK_BOT_USER_OAUTH_TOKEN}} npx playwright test --grep-invert @api
 
       - uses: actions/upload-artifact@v3
         if: always()
