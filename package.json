@@ -6,7 +6,8 @@
   "scripts": {
     "allTests": "playwright test",
     "prodTests": "ENV=prod playwright test",
-    "localTests": "ENV=local playwright test"
+    "localTests": "ENV=local playwright test",
+    "test:api": "playwright test --config=api.config.ts --project=chromium --grep=@api"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "allure-playwright": "^2.4.0"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.0.2",
     "dotenv": "^16.3.1",
     "playwright-slack-report": "^1.1.21"
   }
