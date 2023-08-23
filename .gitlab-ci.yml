@@ -1,6 +1,6 @@
 stages:
   - test
-playwright-tests:
+playwrightTests:
   stage: test
   image: mcr.microsoft.com/playwright:latest
   script:
