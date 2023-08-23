@@ -7,3 +7,7 @@ e2e:
   script:
     - npm ci
     - npx playwright test --grep-invert @api --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
+  artifacts:
+    when: always
+    paths:
+      - playwright-report/
