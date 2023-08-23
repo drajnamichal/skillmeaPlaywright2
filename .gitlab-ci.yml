@@ -3,6 +3,7 @@ stages:
 e2e:
   stage: test
   image: mcr.microsoft.com/playwright:latest
+  parallel: 5
   script:
     - npm ci
-    - npx playwright test --grep-invert @api
+    - npx playwright test --grep-invert @api --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
