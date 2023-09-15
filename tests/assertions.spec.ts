@@ -1,6 +1,6 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from '@scalewright/test';
 
-test('Assertions', async ({ page }) => {
+test.only('Assertions', async ({ page }) => {
   await page.goto('http://www.saucedemo.com');
   expect(page.locator('#user-name')).toContain
   await expect.soft(page.locator('#password')).toBeEditable();
